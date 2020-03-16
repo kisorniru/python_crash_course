@@ -54,19 +54,19 @@ class DatabaseManage(object):
 
 def main():
     print("*"*40)
-    print("\n:: COURSE MANAGEMENT :: \n")
+    print("\n:: COURSE MANAGEMENT ::")
     print("*"*40)
     print("\n")
 
     db = DatabaseManage()
 
     print("#"*40)
-    print("\n :: User Manual :: \n")
+    print("\n :: User Manual ::")
     print("#"*40)
 
-    print("\n Press 1 : Insert a new course\n")
-    print("\n Press 2 : Show all courses\n")
-    print("\n Press 3 : Delete a course (NEED ID OF COURSE)\n")
+    print("\n Press 1 : Insert a new course")
+    print("\n Press 2 : Show all courses")
+    print("\n Press 3 : Delete a course (NEED ID OF COURSE)")
     print("#"*40)
     print("\n")
 
