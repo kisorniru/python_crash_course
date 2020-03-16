@@ -3,13 +3,13 @@ import sqlite3 as lite
 
 # functionality goes here
 
-class DatabaseManage(object):
+class DatabaseManageClass(object):
     def __init__(self):
         global con
         try:
-            con = lite.connect('db_course.db')
+            con = lite.connect("reindex.db")
             with con:
-                cur = con.cursor()
+                cur = lite.cursor()
                 sql = "CREATE TABLE IF NOT EXISTS db_table_course(Id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, description TEXT, price TEXT, is_private BOOLEAN NOT NULL DEFAULT 1)"
                 cur.execute(sql)
         except Exception:
@@ -37,8 +37,8 @@ class DatabaseManage(object):
                 return cur.fetchall()
         except Exception:
             return False
-    
-    # TODO: delete data
+
+    # TODO: create data
     def delete_data(self, id):
         try:
             with con:
@@ -58,7 +58,7 @@ def main():
     print("*"*40)
     print("\n")
 
-    db = DatabaseManage()
+    db = DatabaseManageClass()
 
     print("#"*40)
     print("\n :: User Manual :: \n")
