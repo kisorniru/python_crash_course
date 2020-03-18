@@ -30,3 +30,15 @@ for car in cars:
     print(car)
     if car == 'toyota':
         print('I love toyota')
+
+
+shop_items = {
+    'rice' : 44,
+    'floor' : 33,
+    'oil' : 59
+}
+
+print(shop_items)
+
+for key, value in sorted(shop_items.items()):
+    print(key, value, sep='|')
