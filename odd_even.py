@@ -1,3 +1,0 @@
-# functionality goes here
-
-class 

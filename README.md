@@ -1,2 +1,2 @@
-# python_crash_course
-Learn python with a crash course
+# python_revised_course
+Learn python with a revised course
