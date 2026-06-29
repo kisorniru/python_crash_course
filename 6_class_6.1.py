@@ -90,3 +90,25 @@ else:
 	print("No error occure")
 finally:
 	print("Always show")
+
+
+print("-------------------------")
+
+# Custom exception
+
+try:
+	x = int(input("Enter the nunber: "))
+	if x % 2 == 0:
+		raise Exception("I can't allow this, this is a custom exception message.")
+except ZeroDivisionError:
+	print("Zero Division Error : You can't devided by zero.")
+except ValueError:
+	print("Value Error : Please input an integer number.")
+except Exception as e:
+	print(e)
+except Exception:
+	print("Caught an custom error")
+else:
+	print("No error occure")
+finally:
+	print("Always show")
